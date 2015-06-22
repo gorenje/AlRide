@@ -11,9 +11,9 @@
     "postdeploy": "bundle exec rake db:setup"
   },
   "env": {
-    "ALRIDE_SECRET": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
+    "ALRIDE_PLATFORM_NAME": {
+      "description": "Name of the application for your usage",
+      "value": "AlRide"
     },
     "ALRIDE_HOST": {
       "description": "The domain to use to send your emails, this can be the heroku domain for now.",
@@ -30,6 +30,10 @@
     "ALRIDE_PORT": {
       "description": "Port to use in linkes in emails",
       "value": "443"
+    },
+    "ALRIDE_SECRET": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
     },
     "RACK_ENV": {
       "description": "Rack environment",
